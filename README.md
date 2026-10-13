@@ -117,7 +117,7 @@ Untuk meng-host website:
 3. Pilih branch yang digunakan, misalnya `main`, dan folder publikasi `/ (root)`, lalu simpan.
 4. Setelah publikasi berhasil, buka alamat GitHub Pages yang ditampilkan GitHub.
 
-**Alamat website:** `https://<username>.github.io/<nama-repositori>/`
+**Alamat website:** `https://github.com/satriyofp26/CineVault-Web-Project.git`
 
 Ganti `<username>` dan `<nama-repositori>` dengan informasi repositori yang sebenarnya. Alamat final belum bisa ditentukan dari source code saja. File data dimuat menggunakan path relatif agar dapat digunakan saat project dipublikasikan pada subfolder GitHub Pages.
 
