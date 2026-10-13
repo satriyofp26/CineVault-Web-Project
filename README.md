@@ -119,8 +119,6 @@ Untuk meng-host website:
 
 **Alamat website:** `https://satriyofp26.github.io/CineVault-Web-Project/`
 
-Ganti `<username>` dan `<nama-repositori>` dengan informasi repositori yang sebenarnya. Alamat final belum bisa ditentukan dari source code saja. File data dimuat menggunakan path relatif agar dapat digunakan saat project dipublikasikan pada subfolder GitHub Pages.
-
 ## 8. Pemeriksaan Fitur
 
 Beberapa langkah sederhana untuk mencoba website:
