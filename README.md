@@ -2,7 +2,7 @@
 
 CineVault adalah prototipe website katalog film untuk UTS Pemrograman Web. Pengguna dapat menjelajahi film, mencari berdasarkan judul atau genre, melihat detail film, menyimpan film ke favorit, dan mencoba simulasi pembelian lisensi permanen atau penyewaan selama 48 jam.
 
-Project ini dibuat menggunakan **HTML5, CSS3, JavaScript murni, dan JSON**, tanpa framework. Checkout, akun, dan pemutaran film masih berupa simulasi; website ini tidak memproses pembayaran sungguhan dan tidak menyediakan video film.
+Project ini dibuat menggunakan **HTML, CSS, JavaScript murni, dan JSON**, tanpa framework. Checkout, akun, dan pemutaran film masih berupa simulasi; website ini tidak memproses pembayaran sungguhan dan tidak menyediakan video film.
 
 ## 1. Struktur Project
 
