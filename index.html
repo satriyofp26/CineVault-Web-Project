@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="CineVault — koleksi film pilihan, lisensi permanen atau sewa 48 jam. Tanpa langganan.">
+  <title>CineVault — Film pilihan, milikmu selamanya</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#beranda" aria-label="CineVault, ke beranda">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">cine<span>vault</span></span>
+      </a>
+      <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-label="Ciutkan navigasi" aria-expanded="true">
+        <span aria-hidden="true">‹</span>
+      </button>
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <p class="nav-label">Jelajahi</p>
+        <a class="nav-link" href="#beranda" data-route="beranda"><span aria-hidden="true">⌂</span><span>Beranda</span></a>
+        <a class="nav-link" href="#katalog" data-route="katalog"><span aria-hidden="true">▦</span><span>Katalog</span></a>
+        <a class="nav-link" href="#komunitas" data-route="komunitas"><span aria-hidden="true">◉</span><span>Komunitas</span></a>
+        <p class="nav-label nav-label-spaced">Koleksimu</p>
+        <a class="nav-link" href="#library" data-route="library"><span aria-hidden="true">▤</span><span>Library</span><span class="nav-count" id="library-count">0</span></a>
+        <a class="nav-link" href="#wishlist" data-route="wishlist"><span aria-hidden="true">♡</span><span>Favorit</span></a>
+        <p class="nav-label nav-label-spaced">CineVault</p>
+        <a class="nav-link" href="#tentang" data-route="tentang"><span aria-hidden="true">✳</span><span>Tentang Kami</span></a>
+      </nav>
+      <div class="sidebar-note">
+        <span class="live-dot" aria-hidden="true"></span>
+        <div><strong>Tanpa langganan.</strong><br><span>Film pilihan, jadi milikmu.</span></div>
+      </div>
+      <div class="sidebar-account" id="sidebar-account"></div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+        <form class="top-search" id="global-search" role="search">
+          <label class="sr-only" for="search-input">Cari film, sutradara, atau genre</label>
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Cari film, sutradara, atau genre…" autocomplete="off">
+          <kbd>/</kbd>
+        </form>
+        <div class="topbar-actions">
+          <a class="top-link" href="#library">Koleksi</a>
+          <button class="profile-button" id="profile-button" type="button" aria-label="Buka akun"></button>
+        </div>
+      </header>
+      <main id="konten" tabindex="-1">
+        <div class="loading-state" role="status"><span class="loader" aria-hidden="true"></span> Menyiapkan koleksi CineVault…</div>
+      </main>
+      <footer class="site-footer">
+        <a class="footer-brand" href="#beranda">cinevault</a>
+        <p>Film pilihan. Satu pembayaran, satu lisensi. Tanpa langganan.</p>
+        <a href="#tentang">Tentang CineVault</a>
+        <span>© <span id="year"></span> CineVault · Proyek akademik</span>
+      </footer>
+    </div>
+  </div>
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <form method="dialog" class="dialog-dismiss-form"><button class="icon-button dialog-close" aria-label="Tutup">×</button></form>
+    <div id="checkout-content"></div>
+  </dialog>
+</body>
+</html>

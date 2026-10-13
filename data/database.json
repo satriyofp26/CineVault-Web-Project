@@ -1,0 +1,79 @@
+{
+  "users": [
+    { "id": "pengguna-demo", "email": "demo@cinevault.id", "password": "bioskop48", "display_name": "Penonton Senja", "created_at": "2026-01-12T09:00:00.000Z" },
+    { "id": "pengguna-komunitas-1", "email": "nara@cinevault.id", "password": "cerita123", "display_name": "Nara P.", "created_at": "2026-01-20T09:00:00.000Z" },
+    { "id": "pengguna-komunitas-2", "email": "bima@cinevault.id", "password": "layar1234", "display_name": "Bima S.", "created_at": "2026-02-12T09:00:00.000Z" }
+  ],
+  "user_profiles": [
+    { "user_id": "pengguna-demo", "avatar_initials": "PS", "bio": "Menemukan cerita baik, satu film pada satu waktu." },
+    { "user_id": "pengguna-komunitas-1", "avatar_initials": "NP", "bio": "Penyuka cerita pelan dan detail kecil." },
+    { "user_id": "pengguna-komunitas-2", "avatar_initials": "BS", "bio": "Menonton sambil mencatat." }
+  ],
+  "film_genres": [
+    { "film_id": "senja-di-antara-kita", "genre_id": "drama" },
+    { "film_id": "senja-di-antara-kita", "genre_id": "romansa" },
+    { "film_id": "arsip-bintang", "genre_id": "fiksi-ilmiah" },
+    { "film_id": "arsip-bintang", "genre_id": "misteri" },
+    { "film_id": "frekuensi-terakhir", "genre_id": "thriller" },
+    { "film_id": "frekuensi-terakhir", "genre_id": "misteri" },
+    { "film_id": "peta-hujan", "genre_id": "keluarga" },
+    { "film_id": "peta-hujan", "genre_id": "drama" },
+    { "film_id": "ruang-di-ujung-jalan", "genre_id": "thriller" },
+    { "film_id": "ruang-di-ujung-jalan", "genre_id": "misteri" },
+    { "film_id": "laut-yang-mengingat", "genre_id": "petualangan" },
+    { "film_id": "laut-yang-mengingat", "genre_id": "drama" },
+    { "film_id": "kota-tanpa-jam", "genre_id": "fiksi-ilmiah" },
+    { "film_id": "kota-tanpa-jam", "genre_id": "petualangan" },
+    { "film_id": "kertas-dan-abu", "genre_id": "drama" },
+    { "film_id": "kertas-dan-abu", "genre_id": "romansa" }
+  ],
+  "orders": [
+    { "id": "pesanan-demo-1", "user_id": "pengguna-demo", "total": 8160, "status": "selesai", "created_at": "2026-10-12T13:00:00.000Z" },
+    { "id": "pesanan-demo-2", "user_id": "pengguna-demo", "total": 72000, "status": "selesai", "created_at": "2026-09-20T12:00:00.000Z" },
+    { "id": "pesanan-demo-3", "user_id": "pengguna-demo", "total": 6240, "status": "selesai", "created_at": "2026-10-12T13:00:00.000Z" },
+    { "id": "pesanan-komunitas-1", "user_id": "pengguna-komunitas-1", "total": 64000, "status": "selesai", "created_at": "2026-09-18T12:00:00.000Z" },
+    { "id": "pesanan-komunitas-2", "user_id": "pengguna-komunitas-2", "total": 70000, "status": "selesai", "created_at": "2026-09-18T12:00:00.000Z" }
+  ],
+  "order_items": [
+    { "id": "baris-pesanan-demo-1", "order_id": "pesanan-demo-1", "film_id": "frekuensi-terakhir", "license_type_id": "sewa-48-jam", "unit_price": 8160 },
+    { "id": "baris-pesanan-demo-2", "order_id": "pesanan-demo-2", "film_id": "arsip-bintang", "license_type_id": "permanen", "unit_price": 72000 },
+    { "id": "baris-pesanan-demo-3", "order_id": "pesanan-demo-3", "film_id": "peta-hujan", "license_type_id": "sewa-48-jam", "unit_price": 6240 },
+    { "id": "baris-pesanan-komunitas-1", "order_id": "pesanan-komunitas-1", "film_id": "senja-di-antara-kita", "license_type_id": "permanen", "unit_price": 64000 },
+    { "id": "baris-pesanan-komunitas-2", "order_id": "pesanan-komunitas-2", "film_id": "ruang-di-ujung-jalan", "license_type_id": "permanen", "unit_price": 70000 }
+  ],
+  "payments": [
+    { "id": "pembayaran-demo-1", "order_id": "pesanan-demo-1", "method": "simulasi", "status": "berhasil" },
+    { "id": "pembayaran-demo-2", "order_id": "pesanan-demo-2", "method": "simulasi", "status": "berhasil" },
+    { "id": "pembayaran-demo-3", "order_id": "pesanan-demo-3", "method": "simulasi", "status": "berhasil" },
+    { "id": "pembayaran-komunitas-1", "order_id": "pesanan-komunitas-1", "method": "simulasi", "status": "berhasil" },
+    { "id": "pembayaran-komunitas-2", "order_id": "pesanan-komunitas-2", "method": "simulasi", "status": "berhasil" }
+  ],
+  "user_licenses": [
+    { "id": "lisensi-demo-1", "user_id": "pengguna-demo", "film_id": "frekuensi-terakhir", "license_type_id": "sewa-48-jam", "purchased_at": null, "expires_at": null, "order_id": "pesanan-demo-1" },
+    { "id": "lisensi-demo-2", "user_id": "pengguna-demo", "film_id": "arsip-bintang", "license_type_id": "permanen", "purchased_at": "2026-09-20T12:00:00.000Z", "expires_at": null, "order_id": "pesanan-demo-2" },
+    { "id": "lisensi-demo-3", "user_id": "pengguna-demo", "film_id": "peta-hujan", "license_type_id": "sewa-48-jam", "purchased_at": null, "expires_at": null, "order_id": "pesanan-demo-3" },
+    { "id": "lisensi-komunitas-1", "user_id": "pengguna-komunitas-1", "film_id": "senja-di-antara-kita", "license_type_id": "permanen", "purchased_at": "2026-09-18T12:00:00.000Z", "expires_at": null, "order_id": "pesanan-komunitas-1" },
+    { "id": "lisensi-komunitas-2", "user_id": "pengguna-komunitas-2", "film_id": "ruang-di-ujung-jalan", "license_type_id": "permanen", "purchased_at": "2026-09-18T12:00:00.000Z", "expires_at": null, "order_id": "pesanan-komunitas-2" }
+  ],
+  "reviews": [
+    { "id": "ulasan-demo-1", "user_id": "pengguna-demo", "film_id": "arsip-bintang", "rating": 9, "body": "Visual langit malamnya indah dan ceritanya hangat. Saya suka bagaimana misterinya dijawab tanpa terasa terburu-buru.", "created_at": "2026-09-22T10:00:00.000Z" },
+    { "id": "ulasan-demo-2", "user_id": "pengguna-demo", "film_id": "frekuensi-terakhir", "rating": 8, "body": "Suasana radio malamnya terasa dekat. Penutupnya membuat saya ingin mendengarkan kota lebih saksama.", "created_at": "2026-09-18T10:00:00.000Z" },
+    { "id": "ulasan-komunitas-1", "user_id": "pengguna-komunitas-1", "film_id": "arsip-bintang", "rating": 10, "body": "Film yang pelan tapi tidak pernah kosong. Detail peta bintang dan observatoriumnya akan teringat lama.", "created_at": "2026-09-25T10:00:00.000Z" },
+    { "id": "ulasan-komunitas-2", "user_id": "pengguna-komunitas-2", "film_id": "ruang-di-ujung-jalan", "rating": 7, "body": "Atmosfernya kuat dan penggunaan ruangnya menarik. Cocok ditonton tanpa buru-buru.", "created_at": "2026-09-21T10:00:00.000Z" }
+  ],
+  "review_comments": [
+    { "id": "komentar-demo-1", "review_id": "ulasan-komunitas-1", "user_id": "pengguna-demo", "parent_id": null, "body": "Setuju, detail peta bintangnya juga terasa sangat hidup.", "created_at": "2026-09-26T10:00:00.000Z" },
+    { "id": "komentar-demo-2", "review_id": "ulasan-komunitas-1", "user_id": "pengguna-komunitas-1", "parent_id": "komentar-demo-1", "body": "Terima kasih! Efek suara ombaknya jadi favorit saya.", "created_at": "2026-09-26T11:00:00.000Z" }
+  ],
+  "review_votes": [],
+  "wishlists": [
+    { "user_id": "pengguna-demo", "film_id": "senja-di-antara-kita", "created_at": "2026-09-20T12:00:00.000Z" },
+    { "user_id": "pengguna-demo", "film_id": "ruang-di-ujung-jalan", "created_at": "2026-09-20T12:00:00.000Z" },
+    { "user_id": "pengguna-demo", "film_id": "kota-tanpa-jam", "created_at": "2026-09-20T12:00:00.000Z" }
+  ],
+  "watch_history": [
+    { "user_id": "pengguna-demo", "film_id": "senja-di-antara-kita", "progress_seconds": 2720, "duration_seconds": 6720, "updated_at": "2026-10-11T17:30:00.000Z" },
+    { "user_id": "pengguna-demo", "film_id": "arsip-bintang", "progress_seconds": 3840, "duration_seconds": 7680, "updated_at": "2026-10-08T17:30:00.000Z" }
+  ],
+  "notifications": []
+}

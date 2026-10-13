@@ -1,0 +1,4 @@
+[
+  { "id": "permanen", "name": "Lisensi permanen", "duration_days": null, "price_multiplier": 1, "description": "Simpan di Library dan tonton kapan saja." },
+  { "id": "sewa-48-jam", "name": "Sewa 48 jam", "duration_days": 2, "price_multiplier": 0.12, "description": "Akses film selama 48 jam sejak pembayaran." }
+]

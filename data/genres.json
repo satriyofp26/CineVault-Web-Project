@@ -1,0 +1,9 @@
+[
+  { "id": "drama", "name": "Drama" },
+  { "id": "fiksi-ilmiah", "name": "Fiksi Ilmiah" },
+  { "id": "thriller", "name": "Thriller" },
+  { "id": "keluarga", "name": "Keluarga" },
+  { "id": "misteri", "name": "Misteri" },
+  { "id": "petualangan", "name": "Petualangan" },
+  { "id": "romansa", "name": "Romansa" }
+]
